@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galatasaray.ORG</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link id="template" rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="black-area">
+        <div class="container position-relative">
+          <div id="logo" class="position-absolute">
+            <img src="/logo.png" />
+          </div>
+         
+          <div class="left-black-area">
+            <div>
+              <strong class="news">HABERLER</strong>
+              <marquee class="news"
+                >Mesut zaten geliyor. Ronaldo'yu aldık.</marquee
+              >
+            </div>
+          </div>
+          <div class="right-black-area">
+            <div>
+              <input type="checkbox" id="dark-mode" />
+              <span>Karanlık Mod</span>
+            </div>
+          </div>
+          <div class="clear-fix"></div>
+        </div>
+      </div>
+      <div class="red-area">
+        <div class="container">
+          <ul id="main-menu">
+            <li><a class="active" href="#">Galatasaray SK</a></li>
+            <li><a href="#">FUTBOL</a></li>
+            <li><a href="#">BASKETBOL</a></li>
+            <li><a href="#">VOLEYBOL</a></li>
+            <li><a href="#">BRANŞLAR</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="content"></div>
+
+    <script>
+      window.addEventListener("load", function () {
+        var template = document.getElementById("template");
+        var darkMode = document.getElementById("dark-mode");
+        darkMode.addEventListener("click", function () {
+          if (darkMode.checked) {
+            template.href = "/style.dark.css";
+          } else {
+            template.href = "/style.css";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

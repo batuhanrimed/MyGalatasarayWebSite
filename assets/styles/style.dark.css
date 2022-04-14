@@ -118,9 +118,10 @@ marquee.news {
 }
 
 #our-player {
-  background-color: #f4f4f4;
+  background-color: rgb(38, 38, 44);
   padding-top: 50px;
   padding-bottom: 50px;
+  border-bottom: 3px solid rgb(169, 1, 46);
 }
 
 #our-player .player-card {
